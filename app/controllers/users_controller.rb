@@ -41,10 +41,9 @@ class UsersController < ApplicationController
   end
   
    def set_user
-    if @user = current_user
       @user = User.find(params[:id])
-    else
+    if @user != current_user
      redirect_to root_path , notice: 'あなた以外のプロフィールは編集できません'
     end
-  end
+   end
 end
