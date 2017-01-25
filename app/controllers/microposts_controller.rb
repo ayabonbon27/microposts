@@ -16,4 +16,8 @@ class MicropostsController < ApplicationController
     params.require(:micropost).permit(:content)
   end
 end
+<<<<<<< HEAD
 end
+=======
+
+>>>>>>> user-profile
